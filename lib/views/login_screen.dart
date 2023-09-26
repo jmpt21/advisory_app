@@ -1,5 +1,7 @@
 import 'dart:math';
+import 'package:advisory_app/views/register_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class LoginScreen extends StatelessWidget {
   final bool isDown;
@@ -49,8 +51,11 @@ class LoginScreen extends StatelessWidget {
           SizedBox(
               width: double.infinity,
               height: 55,
-              child:
-                  FilledButton(onPressed: () {}, child: const Text('Log in'))),
+              child: FilledButton(
+                  onPressed: () {
+
+                  },
+                  child: const Text('Log in'))),
           const SizedBox(height: 10),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -58,7 +63,7 @@ class LoginScreen extends StatelessWidget {
               const Text('No account?'),
               TextButton(
                   onPressed: () {
-                    //context.pushNamed(RegisterScreen.routeName);
+                    context.pushNamed(RegisterScreen.routeName);
                   },
                   child: const Text('Sign up!')),
             ],

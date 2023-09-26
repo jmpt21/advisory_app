@@ -1,4 +1,4 @@
-import 'package:advisory_app/views/home_screen.dart';
+import 'package:advisory_app/config/go_router_config.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,13 +10,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: routerConfig,
       title: 'Advisory App - ITSCH',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
     );
   }
 }
