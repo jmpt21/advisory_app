@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       routerConfig: routerConfig,
       title: 'Advisory App - ITSCH',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.cyanAccent),
         useMaterial3: true,
       ),
     );
